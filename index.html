@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="stylesForCalc.css">
+</head>
+<body style="background: url(/images/DL26Rv.png); background-size: cover; background-position: center; background-attachment: fixed">
+    <div class="calcStyle" >
+        <h1>Simple Calculator</h1>
+        <input type="number" id="num1" placeholder="Enter number" required>
+        <select id="operator">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (*)</option>
+            <option value="divide">Division (/)</option>
+        </select>
+        <input type="number" id="num2" placeholder="Enter number" required>
+        <button type="button" onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+        <button id="darkModeToggle">Night Mode</button>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
